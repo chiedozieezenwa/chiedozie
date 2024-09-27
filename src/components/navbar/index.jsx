@@ -11,9 +11,6 @@ export const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const getActiveClass = ({ isActive }) =>
-    isActive ? design.active : undefined;
-
   return (
     <header className={design.container}>
       <nav className={design.nav}>
@@ -25,22 +22,53 @@ export const Navbar = () => {
         <section className={design["right-section"]}>
           <ul className={design.navlinks} onClick={toggleMenu}>
             <li>
-              <NavLink className={getActiveClass} to="/">Home</NavLink>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? design.active : "")}
+                end
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about" className={getActiveClass}>About</NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? design.active : "")}
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/resume" className={getActiveClass}>Resume</NavLink>
+              <NavLink
+                to="/resume"
+                className={({ isActive }) => (isActive ? design.active : "")}
+              >
+                Resume
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/skills" className={getActiveClass}>Skills</NavLink>
+              <NavLink
+                to="/skills"
+                className={({ isActive }) => (isActive ? design.active : "")}
+              >
+                Skills
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" className={getActiveClass}>Projects</NavLink>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) => (isActive ? design.active : "")}
+              >
+                Projects
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className={getActiveClass}>Contact</NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? design.active : "")}
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
 

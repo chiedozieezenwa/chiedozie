@@ -2,14 +2,14 @@ import { About, Contacts, Hero, Navbar, Projects, Resume, Skills } from "../../c
 
 export const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <Hero />
-      <About />
-      <Resume />
-      <Skills />
-      <Projects />
-      <Contacts />
+      <section id="about"><About /></section>
+      <section id="resume"><Resume /></section>
+      <section id="skills"><Skills /></section>
+      <section id="projects"><Projects /></section>
+      <section id="contact"><Contacts /></section>
     </div>
   )
 }

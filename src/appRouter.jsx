@@ -1,13 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "./pages";
-import { About, Contacts, Hero, Projects, Resume, Skills } from "./components";
+import { About, Contacts, Projects, Resume, Skills } from "./components";
 
 const router = createBrowserRouter ([
     {
         path: "/", element: <Home />
-    },
-    {
-        path: "/", element: <Hero />
     },
     {
         path: "/about", element: <About />
