@@ -2,6 +2,6 @@ import design from "./about.module.css"
 
 export const About = () => {
   return (
-    <div className={design.container}>index</div>
+    <div className={design.container}>About</div>
   )
 }

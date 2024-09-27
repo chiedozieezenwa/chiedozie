@@ -74,7 +74,7 @@
         z-index: 1;
     }
 
-    .navlinks {
+    /* .navlinks {
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -84,6 +84,10 @@
         background-color: #0D0D0D;
         border: 2px solid #EAAD34;
         align-items: center;
+    } */
+
+    .navlinks {
+        display: none;
     }
 
     .left-section > p {

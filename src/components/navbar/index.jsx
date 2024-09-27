@@ -23,7 +23,7 @@ export const Navbar = () => {
         </section>
 
         <section className={design["right-section"]}>
-          <ul className={design.navlinks}>
+          <ul className={design.navlinks} onClick={toggleMenu}>
             <li>
               <NavLink className={getActiveClass} to="/">Home</NavLink>
             </li>
@@ -31,16 +31,16 @@ export const Navbar = () => {
               <NavLink to="/about" className={getActiveClass}>About</NavLink>
             </li>
             <li>
-              <NavLink className={getActiveClass}>Resume</NavLink>
+              <NavLink to="/resume" className={getActiveClass}>Resume</NavLink>
             </li>
             <li>
-              <NavLink className={getActiveClass}>Skills</NavLink>
+              <NavLink to="/skills" className={getActiveClass}>Skills</NavLink>
             </li>
             <li>
-              <NavLink className={getActiveClass}>Projects</NavLink>
+              <NavLink to="/projects" className={getActiveClass}>Projects</NavLink>
             </li>
             <li>
-              <NavLink className={getActiveClass}>Contact</NavLink>
+              <NavLink to="/contact" className={getActiveClass}>Contact</NavLink>
             </li>
           </ul>
 

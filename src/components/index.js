@@ -1,3 +1,7 @@
 export * from './navbar'
 export * from './hero'
 export * from './about'
+export * from './resume'
+export * from './skills'
+export * from './projects'
+export * from './contacts'
