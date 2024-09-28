@@ -4,4 +4,3 @@ import dozie1 from "./dozie1.png"
 import about from "./About.png"
 
 export {logo, hero, dozie1, about}
-export * from './CV'

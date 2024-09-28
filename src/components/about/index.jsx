@@ -24,7 +24,7 @@ export const About = () => {
             digital solutions.
           </p>
           <div className={design.callToAction}>
-            <a href="../../assets/CV/chiedozie.pdf" download="chiedozie.pdf">Download CV</a>
+            <a href="../../../public/CV/chiedozie.pdf" download="chiedozie.pdf">Download CV</a>
             <a href="mailto:chiedozieezenwa@gmail.com">Contact Me</a>
           </div>
         </div>
