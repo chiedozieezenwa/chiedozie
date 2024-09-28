@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("#home"); // Default to Home
+  const [activeSection, setActiveSection] = useState("#home");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   const handleSetActive = (section) => {
     setActiveSection(section);
-    setIsOpen(false); // Close the mobile menu when a link is clicked
+    setIsOpen(false);
   };
 
   return (

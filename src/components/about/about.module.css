@@ -1,0 +1,118 @@
+.container {
+    box-sizing: border-box;
+    padding: 0 100px;
+    display: flex;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.aboutSection {
+    background-image: url("../../assets/About.png");
+    background-size: contain;
+    width: 400px;
+    height: 98px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.aboutSection > p {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+    color: #ffffff;
+}
+
+.bio {
+    display: grid;
+    gap: 45px;
+}
+
+.bio > p {
+    width: 556px;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    text-wrap: wrap;
+}
+
+.callToAction > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #020202;
+    height: 48px;
+    border-radius: 48px;
+    letter-spacing: -0.41px;
+}
+
+.callToAction > a:first-child {
+    background-color: #FAB937;
+    width: 151px;
+}
+
+.callToAction > a:last-child {
+    background-color: #C4B28C;
+    width: 136px;
+}
+
+.callToAction {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .left-section > img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .right-section {
+        gap: 20px;
+        padding: 0 1rem;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .aboutSection {
+        width: 200px;
+        height: 49px;
+    }
+
+    .aboutSection > p {
+        font-size: 25px;
+    }
+
+    .bio > p {
+        width: 250px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .callToAction > a {
+        font-size: 10px;
+    }
+
+    .callToAction > a:first-child, .callToAction > a:last-child {
+        width: 80px;
+    }
+}
