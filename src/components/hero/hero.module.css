@@ -71,7 +71,6 @@
     .container {
         flex-direction: column-reverse;
         gap: 1rem;
-        border: 2px solid red;
         padding: 20px;
         margin: 6rem 0 1rem 0;
     }
@@ -81,12 +80,18 @@
     }
 
     .right-section > img {
-        width: 300px;
-        height: 300px;
+        width: 270px;
+        height: 270px;
     }
 
     .hello, .intro, .frontend {
         font-size: 20px;
+    }
+
+    .hireBtn, .workBtn {
+        width: 80px;
+        font-size: 12px;
+        height: 30px;
     }
 
     .frontend {

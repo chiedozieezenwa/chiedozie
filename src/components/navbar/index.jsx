@@ -1,14 +1,20 @@
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link"; // Import HashLink
 import { logo } from "../../assets";
 import design from "./navbar.module.css";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa"; // Import FaTimes for the close icon
 import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("#home"); // Default to Home
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleSetActive = (section) => {
+    setActiveSection(section);
+    setIsOpen(false); // Close the mobile menu when a link is clicked
   };
 
   return (
@@ -20,52 +26,66 @@ export const Navbar = () => {
         </section>
 
         <section className={design["right-section"]}>
-          <ul className={design.navlinks} onClick={toggleMenu}>
+          <ul
+            className={`${design.navlinks} ${isOpen ? design.responsive : ""}`}
+            onClick={toggleMenu}
+          >
             <li>
               <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? design.active : "")}
-                end
+                to="#home"
+                smooth
+                className={activeSection === "#home" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#home")}
               >
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? design.active : "")}
+                to="#about"
+                smooth
+                className={activeSection === "#about" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#about")}
               >
                 About
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/resume"
-                className={({ isActive }) => (isActive ? design.active : "")}
+                to="#resume"
+                smooth
+                className={activeSection === "#resume" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#resume")}
               >
                 Resume
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/skills"
-                className={({ isActive }) => (isActive ? design.active : "")}
+                to="#skills"
+                smooth
+                className={activeSection === "#skills" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#skills")}
               >
                 Skills
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/projects"
-                className={({ isActive }) => (isActive ? design.active : "")}
+                to="#projects"
+                smooth
+                className={activeSection === "#projects" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#projects")}
               >
                 Projects
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/contact"
-                className={({ isActive }) => (isActive ? design.active : "")}
+                to="#contact"
+                smooth
+                className={activeSection === "#contact" ? design.activeLink : ""}
+                onClick={() => handleSetActive("#contact")}
               >
                 Contact
               </NavLink>
@@ -73,7 +93,7 @@ export const Navbar = () => {
           </ul>
 
           <div className={design.icon} onClick={toggleMenu}>
-            <FaBars />
+            {isOpen ? <FaTimes /> : <FaBars />}
           </div>
         </section>
       </nav>
