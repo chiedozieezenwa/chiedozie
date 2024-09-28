@@ -115,11 +115,11 @@
         text-align: justify;
     }
 
-    .callToAction > a {
+    .callToAction > a, .callToAction > button {
         font-size: 10px;
     }
 
-    .callToAction > a:first-child, .callToAction > a:last-child {
+    .callToAction > a:first-child, .callToAction > a:last-child, .callToAction > button {
         width: 80px;
     }
 }
