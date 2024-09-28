@@ -45,7 +45,7 @@
     text-wrap: wrap;
 }
 
-.callToAction > a {
+.callToAction > a, .callToAction > button {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -58,11 +58,18 @@
     height: 48px;
     border-radius: 48px;
     letter-spacing: -0.41px;
+    cursor: pointer;
 }
 
-.callToAction > a:first-child {
+/* .callToAction > a:first-child {
     background-color: #FAB937;
     width: 151px;
+} */
+
+.callToAction > button {
+    background-color: #FAB937;
+    width: 151px;
+    border: none;
 }
 
 .callToAction > a:last-child {

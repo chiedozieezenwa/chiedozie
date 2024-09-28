@@ -2,6 +2,15 @@ import { dozie1 } from "../../assets";
 import design from "./about.module.css";
 
 export const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/CV/chiedozie.pdf'; // Path to your CV file
+    link.download = 'chiedozie.pdf'; // Filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={design.container}>
       <section className={design['left-section']}>
@@ -24,7 +33,8 @@ export const About = () => {
             digital solutions.
           </p>
           <div className={design.callToAction}>
-            <a href="/CV/chiedozie.pdf">Download CV</a>
+            {/* <a href="/CV/chiedozie.pdf" target="_blank">Download CV</a> */}
+            <button onClick={handleDownload}>Download CV</button>
             <a href="mailto:chiedozieezenwa@gmail.com">Contact Me</a>
           </div>
         </div>
