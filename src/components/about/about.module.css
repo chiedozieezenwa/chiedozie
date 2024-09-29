@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+.left-section > img {
+    width: 604px;
+    height: 537px;
+    border-radius: 0 0 10px 0;
+}
+
 .right-section {
     display: flex;
     flex-direction: column;
@@ -60,11 +66,6 @@
     letter-spacing: -0.41px;
     cursor: pointer;
 }
-
-/* .callToAction > a:first-child {
-    background-color: #FAB937;
-    width: 151px;
-} */
 
 .callToAction > button {
     background-color: #FAB937;
