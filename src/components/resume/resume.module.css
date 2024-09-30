@@ -4,6 +4,7 @@
     padding: 0 100px;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     margin-top: 2rem;
     align-items: center;
 }
@@ -23,6 +24,55 @@
     font-weight: 800;
 }
 
+.belowSection {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 24px 54px;
+    width: 427px;
+    height: auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1A1A1A;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.duration {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FAB937;
+}
+
+.role {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.firm {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.jobDesc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 10px;
@@ -37,5 +87,32 @@
     .firstSection > p {
         font-size: 25px;
         line-height: 30px;
+    }
+
+    .belowSection {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 270px;
+        padding: 15px 25px;
+    }
+
+    .card > ul {
+        display: grid;
+        gap: 10px;
+    }
+
+    .role {
+        font-size: 15px;
+    }
+
+    .firm {
+        font-size: 15px;
+    }
+
+    .jobDesc {
+        font-size: 13px;
+        line-height: 20px;
     }
 }

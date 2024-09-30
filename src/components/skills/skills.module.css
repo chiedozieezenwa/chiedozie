@@ -1,0 +1,90 @@
+.container {
+    box-sizing: border-box;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.header {
+    box-sizing: border-box;
+    background-image: url("../../assets/Skills.png");
+    background-size: 371px 103px;
+    width: 371px;
+    height: 103px;
+    display: flex;
+    justify-content: center;
+}
+
+.header > p {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.arrItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.arrItems > div {
+    padding: 28.95px 65px;
+    background-color: #1A1A1A;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.arrItems > div > img {
+    width: 90px;
+    height: 90px;
+}
+
+.arrItems > div > p {
+    font-size: 28.95px;
+    line-height: 28.95px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        background-size: 250px 65px;
+        width: 250px;
+        height: 65px;
+    }
+
+    .header > p {
+        font-size: 24px;
+    }
+
+    .arrItems {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .arrItems > div {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .arrItems > div > p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .arrItems > div > img {
+        width: 35px;
+        height: 40px;
+    }
+}

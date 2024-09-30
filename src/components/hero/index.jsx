@@ -10,7 +10,7 @@ export const Hero = () => {
           <p className={design.intro}>I am <span>Chiedozie Ezenwa</span></p>
           <p className={design.frontend}>A Frontend Developer based in Enugu, Nigeria.</p>
           <div className={design.heroBtn}>
-            <button className={design.hireBtn}>Hire Me</button>
+            <a href="mailto:chiedozieezenwa@gmail.com" className={design.hireBtn}>Hire Me</a>
             <NavLink to="#projects"><button className={design.workBtn}>My Works</button></NavLink>
           </div>
         </section>

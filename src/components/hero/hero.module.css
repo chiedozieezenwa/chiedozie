@@ -1,9 +1,9 @@
 .container {
     display: flex;
     align-items: center;
-    padding: 100px;
+    padding: 0 100px;
     justify-content: space-between;
-    margin: 2rem 0 0 0;
+    margin: 8rem 0 0 0;
 }
 
 .left-section {
@@ -49,6 +49,9 @@
     border: none;
     background-color: #FAB937;
     color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .workBtn {
@@ -65,6 +68,7 @@
     height: 48px;
     border-radius: 48px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
