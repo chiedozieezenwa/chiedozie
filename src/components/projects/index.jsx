@@ -34,7 +34,9 @@ export const Projects = () => {
             exit="hide"
           >
             <img src={data.image} alt="Projects" className={design.projectImg}/>
-            <p className={design.imgCaption}>{data.caption}</p>
+            <a href={data.url} target="_blank" rel="noopener noreferrer" className={design.imgCaption}>
+              {data.caption}
+            </a>
           </motion.div>
         ))}
       </section>
