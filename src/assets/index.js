@@ -7,3 +7,4 @@ import projects from "./Projects.png"
 
 export {logo, hero, dozie1, about, skills, projects}
 export * from "./skills"
+export * from "./projects"
