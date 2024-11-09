@@ -1,0 +1,95 @@
+.container {
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header {
+    background-image: url("../../assets//Certifications.png");
+    width: 547px;
+    height: 103px;
+    background-size: 547px 103px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > p {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.certificates {
+    display: flex;
+    gap: 10px;
+}
+
+.certificates > section {
+    width: 316px;
+    height: 234px;
+    border-radius: 20px;
+}
+
+.interncert {
+    background-image: url("../../assets/learnableV.png");
+}
+
+.degree {
+    background-image: url("../../assets/degreeB.png");
+}
+
+.leadership {
+    background-image: url("../../assets/leader.png");
+}
+
+.meta {
+    background-image: url("../../assets/meta.png");
+}
+
+.interncert, .degree, .leadership, .meta {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        width: 250px;
+        height: 80px;
+        background-size: 250px 80px;
+        align-items: center;
+    }
+
+    .header > p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .certificates {
+        flex-direction: column;
+    }
+
+    .certificates > section {
+        width: 250px;
+    }
+
+    .interncert, .degree, .leadership, .meta {
+        font-size: 15px;
+        line-height: 15px;
+    }
+}

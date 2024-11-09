@@ -1,4 +1,4 @@
-import { About, Contacts, Hero, Navbar, Projects, Resume, Skills } from "../../components"
+import { About, Cert, Contacts, Hero, Navbar, Projects, Resume, Skills } from "../../components"
 
 export const Home = () => {
   return (
@@ -9,6 +9,7 @@ export const Home = () => {
       <section id="resume"><Resume /></section>
       <section id="skills"><Skills /></section>
       <section id="projects"><Projects /></section>
+      <section id="certs"><Cert /></section>
       <section id="contact"><Contacts /></section>
     </div>
   )
