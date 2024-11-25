@@ -9,6 +9,7 @@ import degreeB from "./degreeB.png";
 import learnableV from "./learnableV.png";
 import meta from "./meta.png";
 import leader from "./leader.png";
+import contact from "./Contact.png"
 
 export {
   logo,
@@ -22,6 +23,7 @@ export {
   learnableV,
   meta,
   leader,
+  contact
 };
 export * from "./skills";
 export * from "./projects";
